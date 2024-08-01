@@ -1,0 +1,307 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* CONTAINER START */
+.container
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: transparent;
+}
+
+/* LEFT SECTION START */
+.cleft
+{
+    height: 100vh;
+    width: 60%;
+    box-shadow: 1px 5px 10px 2px rgb(212, 212, 212);
+    background-color: transparent;
+}
+
+/* HEADER START */
+header
+{
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.hleft
+{
+    margin-left: 10px;
+}
+
+.hright
+{
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.hright input
+{
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+/* HEADER OVER */
+
+/* MENU START */
+.menu
+{
+    height: 5vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.menu li
+{
+    display: inline;
+    text-decoration: none;
+}
+/* MENU OVER */
+
+/* ITEMS */
+.itemsContainer
+{
+    height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 15px;
+    margin-top: 10px;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.iOne
+{
+    display: flex;
+    background-color: transparent;
+    justify-content: space-around;
+}
+
+.img
+{
+    height: 60px;
+    width: 75px;
+    border-radius: 5px;
+    margin-left: 100px;
+}
+
+.Items
+{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Items:hover
+{
+    scale: 1.2;
+    border: 1px solid gray;
+}
+
+.iTwo
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.iThree
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.iFour
+{
+    display: flex;
+    justify-content: space-around;
+}
+/* ITEMS OVER */
+/* LEFT SECTION OVER */
+
+/* RIGHT SECTION START */
+.cright
+{
+    height: 100vh;
+    width: 40%;
+    background-color: transparent;
+}
+
+/* RIGHT HEADER START */
+.clear
+{
+    color: red;
+    background-color: rgb(255, 206, 206);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.setting
+{
+    background-color: rgb(215, 215, 215);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+/* RIGHT HEADER OVER */
+
+/* ORDER START */
+.orderContainer
+{
+    height: 40vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;   
+    box-shadow: 1px 5px 10px 2px rgb(212, 212, 212);
+    margin: 10px;
+    background-color: transparent;
+}
+
+.orders
+{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.oheading
+{
+    width: 8vw;
+    text-align: justify;
+}
+
+.oimg
+{
+    height: 60px;
+    width: 75px;
+    border-radius: 5px;
+}
+
+.oequals
+{
+    background-color: rgb(215, 215, 215);
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+
+.oplus
+{
+    background-color: rgb(215, 215, 215);
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+
+.price
+{
+    width: 5vw;
+    text-align: end;
+}
+/* ORDER OVER */
+
+/* TOTAL START */
+.totalContainer
+{
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between; 
+    font-weight: 500;   
+    box-shadow: 1px 5px 10px 2px rgb(212, 212, 212);
+}
+
+.tleft
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.tright
+{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+/* TOTAL END */
+
+/* CREDIT START */
+.creditContainer
+{
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;   
+    box-shadow: 1px 5px 10px 2px rgb(212, 212, 212);
+}
+
+.creditleft
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.creditright
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.creditright button
+{
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: rgb(178, 178, 178);
+    border: none;
+    cursor: pointer;
+}
+/* CREADIT OVER */
+
+.paywcredit
+{
+    width: 38vw;
+    margin-left: 15px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    background-color: orangered;
+}
+
+/* RIGHT SECTION OVER */
+
+/* CONTAINER OVER */
