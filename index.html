@@ -1,315 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
 
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&display=swap"
+        rel="stylesheet">
+
+    <title> Point-Of-Sale </title>
 
 </head>
+
 <body>
 
-    <!-- CONTENT START -->
-    <div class="container">
-     
-        <!-- LEFT SECTION START -->
-        <div class="cleft">
+    <div class="main-container">
 
-            <!-- LEFT HEADER START -->
-            <header>
-                <div class="hleft">
+        <div class="left-sub-container">
+
+            <header class="left-sub-container-header">
+
+                <div class="left-side-of-left-sub-container-header">
                     <h1>M's Collection</h1>
                     <h3>Location ID#MIRAL0111</h3>
                 </div>
-                <div class="hright">                    
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" name="" id="">
+
+                <div class="right-side-of-left-sub-container-header">
+                    <input type="text" name="" id="" class="search">
                 </div>
+
             </header>
-            <!-- LEFT HEADER END -->
 
-            <!-- MENU START -->
-            <ul class="menu">
-                <li><span style="background-color: orangered; border-radius: 20px; padding: 7px;">All Items</span></li>
-                <li>Sneakers</li>
-                <li>Wallet</li>
-                <li>Cap</li>
-            </ul>
-            <!-- MENU OVER -->
+            <nav class="navigation-bar">
+                <ul>
+                    <li>All Items</li>
+                    <li>Sneakers</li>
+                    <li>Wallet</li>
+                    <li>Cap</li>
+                </ul>
+            </nav>
 
-            <!-- ITEMS START -->
-            <div class="itemsContainer">
+            <div class="products-container">
 
-                <div class="iOne">
+                <div class="products">
 
-                    <div class="Items">
-                        <div class="top">
-                            <h3>Neemans</h3>
-                            <span style="color: gray;">cotton classic sneakers <br> for Men</span>
-                        </div>
-                        <div class="bottom">
-                            <span style="color: orange;">&#8377;1,399</span>
-                            <img src="../01_08/IMAGES/Sneaker1.jpg" alt="" class="img">
-                        </div>
+                    <div class="top-part-of-product">
+                        <h3>Neemans</h3>
+                        <span class="description">cotton classic sneakers <br> for Men</span>
                     </div>
-    
-                    <div class="Items">
-                        <div class="top">
-                            <h3>HRX by Hrithik Roshan</h3>
-                            <span style="color: gray;">HRX-118 Sneakers <br> For Men</span>
-                        </div>
-                        <div class="bottom">
-                            <span style="color: orange;" >&#8377;1,493</span>
-                            <img src="../01_08/IMAGES/Sneaker2.jpg" alt="" class="img">
-                        </div>
-                    </div>
-    
-                    <div class="Items">
-                        <div class="top">
-                            <h3>asian</h3>
-                            <span style="color: gray;">Boston-01 Chunky <br> Sneakers</span>
-                        </div>
-                        <div class="bottom">
-                            <span style="color: orange;" >&#8377;822</span>
-                            <img src="../01_08/IMAGES/Sneaker3.jpg" alt="" class="img">
-                        </div>
-                    </div>
-                    
 
-                </div>
-
-                <div class="iTwo">
-
-                    <div class="Items">
-                        <div class="top">
-                            <h3>asian</h3>
-                            <span style="color: gray;">Sneaker Casual Shoes <br> For Men</span>
-                        </div>
-                        <div class="bottom">
-                            <span style="color: orange;" >&#8377;772</span>
-                            <img src="../01_08/IMAGES/Sneaker4.jpg" alt="" class="img">
-                        </div>
-                    </div>
-    
-                    <div class="Items">
-                        <div class="top">
-                            <h3>Puma</h3>
-                            <span style="color: gray;">Leather Stripe <br> Wallet</span>
-                        </div>
-                        <div class="bottom">
-                            <span style="color: orange;" >&#8377;1,249</span>
-                            <img src="../01_08/IMAGES/Wallet1.avif" alt="" class="img">
-                        </div>
-                    </div>
-    
-                    <div class="Items">
-                        <div class="top">
-                            <h3>VOGARD</h3>
-                            <span style="color: gray;">Unisex Brown <br> Wallet</span>
-                        </div>
-                        <div class="bottom">
-                            <span style="color: orange;" >&#8377;450</span>
-                            <img src="../01_08/IMAGES/Wallet2.webp" alt="" class="img">
-                        </div>
+                    <div class="bottom-part-of-product">
+                        <span class="price-of-product">&#8377;999</span>
+                        <img src="https://imgs.search.brave.com/_c9oLrMDPtOW3YHzAtcclA0ZYacZHZo7UJgcxiY06bA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTcx/MjI0NDY5L3Bob3Rv/L2NhbnZhcy1zaG9l/cy5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9b0Q1QTYxeHhn/bmEtMFdOYWZOY1p4/eVNTd0NpRW5VQ3M1/d2lESlZmYjJ0UT0"
+                            alt="sneaker_1" class="product-img">
                     </div>
 
                 </div>
 
-                <div class="iThree">
-
-                    <div class="Items">
-                        <div class="top">
-                            <h3>Sassora</h3>
-                            <span style="color: gray;">Leather Envelope <br> Wallet</span>
-                        </div>
-                        <div class="bottom">
-                            <span style="color: orange;" >&#8377;934</span>
-                            <img src="../01_08/IMAGES/Wallet3.webp" alt="" class="img">
-                        </div>
+                <div class="products">
+                    <div class="top-part-of-product">
+                        <h3>HRX</h3>
+                        <span class="description">HRX-118 Sneakers <br> For Men</span>
                     </div>
-    
-                    <div class="Items">
-                        <div class="top">
-                            <h3>Allen Solly</h3>
-                            <span style="color: gray;">Men Solid <br> Two Fold Wallet</span>
-                        </div>
-                        <div class="bottom">
-                            <span style="color: orange;" >&#8377;766</span>
-                            <img src="../01_08/IMAGES/Wallet4.webp" alt="" class="img">
-                        </div>
+                    <div class="bottom-part-of-product">
+                        <span class="price-of-product">&#8377;993</span>
+                        <img src="https://imgs.search.brave.com/g42Y7Y8j9lt0PyLU_LPjk9Sr2KW-DA3P5kyIsUH36Fo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjIz/MjcwODM2L3Bob3Rv/L21vZGVybi1zcG9y/dC1zaG9lcy5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9RDd4/T2l5VjNUTVFnVXVJ/cWxWdnV0UG80OWd5/TUc5ZjVVODJtY3Z1/RGMwWT0"
+                            alt="sneaker_2" class="product-img">
                     </div>
-    
-                    <div class="Items">
-                        <div class="top">
-                            <h3>Nike</h3>
-                            <span style="color: gray;">Tech Swoosh <br> Cap</span>
-                        </div>
-                        <div class="bottom">
-                            <span style="color: orange;" >&#8377;766</span>
-                            <img src="../01_08/IMAGES/Cap1.avif" alt="" class="img">
-                        </div>
-                    </div>
-
                 </div>
 
-                <div class="iFour">
-
-                    <div class="Items">
-                        <div class="top">
-                            <h3>New Era</h3>
-                            <span style="color: gray;">Men's Plain Base <br> Ball Cap</span>
-                        </div>
-                        <div class="bottom">
-                            <span style="color: orange;" >&#8377;566</span>
-                            <img src="../01_08/IMAGES/Cap2.webp" alt="" class="img">
-                        </div>
+                <div class="products">
+                    <div class="top-part-of-product">
+                        <h3>asian</h3>
+                        <span class="description">Boston-01 Chunky <br> Sneakers</span>
                     </div>
-
-                    <div class="Items">
-                        <div class="top">
-                            <h3>Jack & Jones</h3>
-                            <span style="color: gray;">Cooling Performance <br> Cap</span>
-                        </div>
-                        <div class="bottom">
-                            <span style="color: orange;" >&#8377;1,200</span>
-                            <img src="../01_08/IMAGES/Cap3.webp" alt="" class="img">
-                        </div>
+                    <div class="bottom-part-of-product">
+                        <span class="price-of-product">&#8377;822</span>
+                        <img src="https://imgs.search.brave.com/_l4b4UWGOyKw6LT6A651kN3fWUgs4D8kXRp38ianmw4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjkx/NjE2MTM2L3Bob3Rv/L3JlZC1zbmVha2Vy/cy5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9QkJNTk94Um5O/TmRhZUVabU1vb0Ex/WHU5RXhxLW9sd3JQ/OW4zQi1pYUpDVT0"
+                            alt="sneaker_3" class="product-img">
                     </div>
+                </div>
 
-                    <div class="Items">
-                        <div class="top">
-                            <h3>Puma</h3>
-                            <span style="color: gray;">Small Polo <br> Cap</span>
-                        </div>
-                        <div class="bottom">
-                            <span style="color: orange;" >&#8377;699</span>
-                            <img src="../01_08/IMAGES/Cap4.avif" alt="" class="img">
-                        </div>
+                <div class="products">
+                    <div class="top-part-of-product">
+                        <h3>asian</h3>
+                        <span class="description">Sneaker Casual Shoes <br> For Men</span>
                     </div>
+                    <div class="bottom-part-of-product">
+                        <span class="price-of-product">&#8377;772</span>
+                        <img src="https://imgs.search.brave.com/Tref6WhdOsSQi95-kaiHPu6j5DzoTb_EeYCRh1mxF3A/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDkx/NjAzODIyL3Bob3Rv/L3BhaXItb2YtZ3Jl/ZW4tc25lYWtlcnMu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PVJ3LURLUkNRRkQ0/RnNMbXNUZDltU2tB/QkVLZ3I5RkRoQ1Bk/RGxIODV4a2M9"
+                            alt="" class="product-img">
+                    </div>
+                </div>
 
+                <div class="products">
+                    <div class="top-part-of-product">
+                        <h3>Puma</h3>
+                        <span class="description">Leather Stripe <br> Wallet</span>
+                    </div>
+                    <div class="bottom-part-of-product">
+                        <span class="price-of-product">&#8377;749</span>
+                        <img src="https://imgs.search.brave.com/gTBQYAlJamV8mwBTVicxbc0FdwEUcnATKkkXCxN6WxE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG9wb3ZsZWF0aGVy/LmNvbS9jZG4vc2hv/cC9maWxlcy9sZWF0/aGVyLTUtY2FyZC13/YWxsZXQtZW5nbGlz/aC10YW4tcG9wb3Yt/bGVhdGhlci00MTMx/MDI1MTQ4MzM1OS5q/cGc_dj0xNzA2MDcy/NzYxJndpZHRoPTE2/MDA"
+                            alt="wallet_1" class="product-img">
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="top-part-of-product">
+                        <h3>VOGARD</h3>
+                        <span class="description">Unisex Brown <br> Wallet</span>
+                    </div>
+                    <div class="bottom-part-of-product">
+                        <span class="price-of-product">&#8377;450</span>
+                        <img src="https://imgs.search.brave.com/kQ_ClhS3f_I9PdaeDK8Z6OIs1-90aN8BucQJwAKj-IA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG9wb3ZsZWF0aGVy/LmNvbS9jZG4vc2hv/cC9maWxlcy9sZWF0/aGVyLTUtY2FyZC13/YWxsZXQtaGVyaXRh/Z2UtYnJvd24tcG9w/b3YtbGVhdGhlci00/MTMxMDI1NDQzMjQ3/OS5qcGc_dj0xNzA2/MDcyNTc4JndpZHRo/PTE2MDA"
+                            alt="wallet_2" class="product-img">
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="top-part-of-product">
+                        <h3>Sassora</h3>
+                        <span class="description">Leather Envelope <br> Wallet</span>
+                    </div>
+                    <div class="bottom-part-of-product">
+                        <span class="price-of-product">&#8377;934</span>
+                        <img src="https://imgs.search.brave.com/5gOxNeymY4D-gi7ITYHHp8yofWFT8Tmq56oahJtuxm4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG9wb3ZsZWF0aGVy/LmNvbS9jZG4vc2hv/cC9maWxlcy9sZWF0/aGVyLTUtY2FyZC13/YWxsZXQtYmxhY2st/cG9wb3YtbGVhdGhl/ci00MTMxMDI0ODcz/MDg0Ny5qcGc_dj0x/NzA2MDczMjkxJndp/ZHRoPTE2MDA"
+                            alt="wallet_3" class="product-img">
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="top-part-of-product">
+                        <h3>Allen Solly</h3>
+                        <span class="description">Men Solid Two <br> Fold Wallet</span>
+                    </div>
+                    <div class="bottom-part-of-product">
+                        <span class="price-of-product">&#8377;766</span>
+                        <img src="https://imgs.search.brave.com/UxZuL5P3Muv21LV1Hm7iXgRuuL8B_F8t3ixfdrwTlW8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG9wb3ZsZWF0aGVy/LmNvbS9jZG4vc2hv/cC9maWxlcy9sZWF0/aGVyLXRyYWRpdGlv/bmFsLXdhbGxldC1o/ZXJpdGFnZS1icm93/bi1wb3Bvdi1sZWF0/aGVyLTQxNDA5MjE0/NTc4OTExLmpwZz92/PTE3MDcxOTU1NDQm/d2lkdGg9MTYwMA"
+                            alt="wallet_4" class="product-img">
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="top-part-of-product">
+                        <h3>Nike</h3>
+                        <span class="description">Tech Swoosh <br> Cap</span>
+                    </div>
+                    <div class="bottom-part-of-product">
+                        <span class="price-of-product">&#8377;766</span>
+                        <img src="https://imgs.search.brave.com/C4Gp2eUrlLAY_ZfC-_U3P6I-NU2cvXe5EeH7R_nAhF4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTEy/NzMyNTc0L3Bob3Rv/L2NhcC1vbi13aGl0/ZS1iYWNrZ3JvdW5k/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1ZQk5WTEpxbm5U/MWZwbVJ6SlBfQnFT/Tkg0a0QwM3BscHhG/MHFTVWRCQThRPQ"
+                            alt="cap_1" class="product-img">
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="top-part-of-product">
+                        <h3>New Era</h3>
+                        <span class="description">Men's Plain Base <br> Ball Cap</span>
+                    </div>
+                    <div class="bottom-part-of-product">
+                        <span class="price-of-product">&#8377;566</span>
+                        <img src="https://imgs.search.brave.com/qz5ty4o8BGvXb1PZvvnReAX32tkGoqPtc1CwocJE4GI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTI2/MTMxNTAwL3Bob3Rv/L2hhdC1vbi13aGl0/ZS1iYWNrZ3JvdW5k/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz13RWFacXhxc0NB/c3loVC1xc1doOVFS/eGMxRXUwLWtta2tm/TUpUZG1TMnFZPQ"
+                            alt="cap_2" class="product-img">
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="top-part-of-product">
+                        <h3>Jack & Jones</h3>
+                        <span class="description">Cooling Performance <br> Cap</span>
+                    </div>
+                    <div class="bottom-part-of-product">
+                        <span class="price-of-product">&#8377;900</span>
+                        <img src="https://imgs.search.brave.com/R0bcVq146jQwe6NoBQkiMVV1P9B1Pjq4UZj-Yxlk1kM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTg1/MjQ4NzQzL3Bob3Rv/L2Jhc2ViYWxsLWNh/cC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9Rkg4eWFhNkJR/OHA5ZzRSeGVyd1dI/d1N3MnVhdWFEUGxT/MlRxS3RtMkNZdz0"
+                            alt="cap_3" class="product-img">
+                    </div>
                 </div>
 
             </div>
-          <!-- ITEMS OVER -->
-            
+
         </div>
-        <!-- LEFT SECTION OVER -->
-    
-        <!-- RIGHT SECTION START -->
-        <div class="cright">
-    
-            <!-- RIGHT HEADER START -->
-            <header style="margin-top: 10px; height: 10vh;">
-                <div class="Hleft" style="margin-left: 10px;">
+
+        <div class="right-sub-container">
+
+            <header class="right-sub-container-header">
+
+                <div class="left-side-of-right-sub-container-header">
                     <h2>Current Order</h2>
                 </div>
-                <div class="Hright">
-                    <button class="clear">Clear All</button>
-                    <button class="setting">Setting</button>
+
+                <div class="right-side-of-right-sub-container-header">
+                    <button class="clear-btn">Clear All</button>
+                    <button class="setting-btn">Setting</button>
                 </div>
+
             </header>
-            <!-- RIGHT HEADER END -->
 
-            <!-- ORDER START -->
-            <div class="orderContainer">
+            <div class="orders-container">
 
                 <div class="orders">
-                    <img src="../01_08/IMAGES/Sneaker2.jpg" alt="" class="oimg">
-                    <h5 class="oheading">HRX-118 Sneakers For Men</h5>
-                    <span class="oequals">-</span>
+                    <img src="https://imgs.search.brave.com/g42Y7Y8j9lt0PyLU_LPjk9Sr2KW-DA3P5kyIsUH36Fo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjIz/MjcwODM2L3Bob3Rv/L21vZGVybi1zcG9y/dC1zaG9lcy5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9RDd4/T2l5VjNUTVFnVXVJ/cWxWdnV0UG80OWd5/TUc5ZjVVODJtY3Z1/RGMwWT0"
+                        alt="sneaker_2" class="ordered-product-img">
+                    <h5 class="ordered-product-name">HRX-118</h5>
+                    <span class="equals">-</span>
                     <span>1</span>
-                    <span class="oplus">+</span>   
-                    <span class="price">&#8377;1,493</span> 
+                    <span class="plus">+</span>
+                    <span class="product-price">&#8377;1,493</span>
                 </div>
 
                 <div class="orders">
-                    <img src="../01_08/IMAGES/Sneaker3.jpg" alt="" class="oimg">
-                    <h5 class="oheading">Boston-01 Chunky Sneakers</h5>
-                    <span class="oequals">-</span>
+                    <img src="https://imgs.search.brave.com/_l4b4UWGOyKw6LT6A651kN3fWUgs4D8kXRp38ianmw4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjkx/NjE2MTM2L3Bob3Rv/L3JlZC1zbmVha2Vy/cy5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9QkJNTk94Um5O/TmRhZUVabU1vb0Ex/WHU5RXhxLW9sd3JQ/OW4zQi1pYUpDVT0"
+                        alt="sneaker_3" class="ordered-product-img">
+                    <h5 class="ordered-product-name">Boston-01</h5>
+                    <span class="equals">-</span>
                     <span>1</span>
-                    <span class="oplus">+</span>   
-                    <span class="price">&#8377;822</span> 
+                    <span class="plus">+</span>
+                    <span class="product-price">&#8377;822</span>
                 </div>
 
                 <div class="orders">
-                    <img src="../01_08/IMAGES/Wallet3.webp" alt="" class="oimg">
-                    <h5 class="oheading">Leather Envelope Wallet</h5>
-                    <span class="oequals">-</span>
+                    <img src="https://imgs.search.brave.com/5gOxNeymY4D-gi7ITYHHp8yofWFT8Tmq56oahJtuxm4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG9wb3ZsZWF0aGVy/LmNvbS9jZG4vc2hv/cC9maWxlcy9sZWF0/aGVyLTUtY2FyZC13/YWxsZXQtYmxhY2st/cG9wb3YtbGVhdGhl/ci00MTMxMDI0ODcz/MDg0Ny5qcGc_dj0x/NzA2MDczMjkxJndp/ZHRoPTE2MDA"
+                        alt="wallet_3" class="ordered-product-img">
+                    <h5 class="ordered-product-name">Leather Wallet</h5>
+                    <span class="equals">-</span>
                     <span>1</span>
-                    <span class="oplus">+</span>   
-                    <span class="price">&#8377;822</span> 
+                    <span class="plus">+</span>
+                    <span class="product-price">&#8377;822</span>
                 </div>
 
                 <div class="orders">
-                    <img src="../01_08/IMAGES/Cap3.webp" alt="" class="oimg">
-                    <h5 class="oheading">Cooling Performance Cap</h5>
-                    <span class="oequals">-</span>
+                    <img src="https://imgs.search.brave.com/UxZuL5P3Muv21LV1Hm7iXgRuuL8B_F8t3ixfdrwTlW8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG9wb3ZsZWF0aGVy/LmNvbS9jZG4vc2hv/cC9maWxlcy9sZWF0/aGVyLXRyYWRpdGlv/bmFsLXdhbGxldC1o/ZXJpdGFnZS1icm93/bi1wb3Bvdi1sZWF0/aGVyLTQxNDA5MjE0/NTc4OTExLmpwZz92/PTE3MDcxOTU1NDQm/d2lkdGg9MTYwMA"
+                        alt="wallet_4" class="ordered-product-img">
+                    <h5 class="ordered-product-name">Two Fold Wallet</h5>
+                    <span class="equals">-</span>
                     <span>1</span>
-                    <span class="oplus">+</span>   
-                    <span class="price">&#8377;1,200</span> 
+                    <span class="plus">+</span>
+                    <span class="product-price">&#8377;699</span>
                 </div>
 
                 <div class="orders">
-                    <img src="../01_08/IMAGES/Cap4.avif" alt="" class="oimg">
-                    <h5 class="oheading">Small Polo Cap For Men</h5>
-                    <span class="oequals">-</span>
+                    <img src="https://imgs.search.brave.com/qz5ty4o8BGvXb1PZvvnReAX32tkGoqPtc1CwocJE4GI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTI2/MTMxNTAwL3Bob3Rv/L2hhdC1vbi13aGl0/ZS1iYWNrZ3JvdW5k/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz13RWFacXhxc0NB/c3loVC1xc1doOVFS/eGMxRXUwLWtta2tm/TUpUZG1TMnFZPQ"
+                        alt="cap_2" class="ordered-product-img">
+                    <h5 class="ordered-product-name">Base Ball Cap</h5>
+                    <span class="equals">-</span>
                     <span>1</span>
-                    <span class="oplus">+</span>   
-                    <span class="price">&#8377;699</span> 
+                    <span class="plus">+</span>
+                    <span class="product-price">&#8377;1,200</span>
+                </div>
+
+                <div class="orders">
+                    <img src="https://imgs.search.brave.com/R0bcVq146jQwe6NoBQkiMVV1P9B1Pjq4UZj-Yxlk1kM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTg1/MjQ4NzQzL3Bob3Rv/L2Jhc2ViYWxsLWNh/cC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9Rkg4eWFhNkJR/OHA5ZzRSeGVyd1dI/d1N3MnVhdWFEUGxT/MlRxS3RtMkNZdz0"
+                        alt="cap_3" class="ordered-product-img">
+                    <h5 class="ordered-product-name">Polo Cap</h5>
+                    <span class="equals">-</span>
+                    <span>1</span>
+                    <span class="plus">+</span>
+                    <span class="product-price">&#8377;699</span>
                 </div>
 
             </div>
-        <!-- ORDER END -->
 
-        <!-- TOTAL START -->
-        <div class="totalContainer">
+            <div class="bill-container">
 
-            <div class="tleft">
-                <span>Subtotal</span>
-                <span>Discount</span>
-                <span>Sales Tax</span>
-                <h3 style="margin-top: 15px;">Total</h3>
+                <div class="bill-details">
+                    <span>Subtotal</span>
+                    <span>&#8377;35.25</span>
+                </div>
+
+                <div class="bill-details">
+                    <span>Discount</span>
+                    <span>- &#8377;5.00</span>
+                </div>
+
+                <div class="bill-details">
+                    <span>Sales Tax</span>
+                    <span>&#8377;2.25</span>
+                </div>
+                <br>
+
+                <hr>
+
+                <div class="bill-details">
+                    <h3 class="total">Total</h3>
+                    <h3 class="total">&#8377;37.50</h3>
+                </div>
+
             </div>
 
-            <div class="tright">
-                <span>&#8377;35.25</span>
-                <span>- &#8377;5.00</span>
-                <span>&#8377;2.25</span>
-                <h3 style="margin-top: 15px;">&#8377;37.50</h3>
+            <div class="credit-wallet-container">
+
+                <div class="left-side-of-credit-wallet-container">
+                    <h5>CASHLESS CREDIT</h5>
+                    <span class="credit-rupees">&#8377;32.50</span>
+                    <span style="color: gray;">Available</span>
+                </div>
+
+                <div class="right-side-of-credit-wallet-container">
+                    <button class="cancel">Cancel</button>
+                </div>
+
             </div>
+
+            <button class="pay-with-credit">pay with cashless credit</button>
 
         </div>
-        <!-- TOTAL END -->
-
-        <!-- CREDIT START -->
-        <div class="creditContainer">
-
-            <div class="creditleft">
-                <h5>CASHLESS CREDIT</h5>
-                <span>&#8377;32.50</span>
-                <span style="color: gray;">Available</span>
-            </div>
-
-            <div class="creditright">
-                <button>Cancel</button>
-            </div>
-
-        </div>
-        <!-- CREDIT END -->
-
-        <button class="paywcredit">pay with cashless credit</button>
-
-        </div>
-        <!-- RIGHT SECTION OVER -->
 
     </div>
-    <!-- CONTENT OVER -->
 
 </body>
+
 </html>
