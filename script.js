@@ -1,18 +1,28 @@
-const productContainer = document.getElementById('products_container');
-const Products = productContainer.getElementsByClassName('products');
+const sortList = (category, event) => {
+    const list = {
+        'all': 'All Items',
+        'sneakers': 'Sneakers',
+        'wallet': 'Wallets',
+        'cap': 'Cap'
+    };
 
-function sortList(category, event) {
-    
-    for (let i = 0; i < Products.length; i++) {
-        const Items = Products[i];
-        
-        if (category == 'all' || Items.getAttribute('data-category') == category) {
-            Items.style.display = 'block';
-        } else {
-            Items.style.display = 'none';
+    document.querySelectorAll('.nav-items').forEach((el) => {
+        if (el.innerHTML === list[category]) {
+            el.classList.add('active-navigation-bar')
+
+            return
         }
-    }
 
+        el.classList.remove('active-navigation-bar')
+    })
+
+    document.querySelectorAll('.products').forEach((el) => {
+        if (category === 'all' || el.getAttribute('data-category') === category) {
+            el.style.display = 'block'
+        } else {
+            el.style.display = 'none'
+        }
+    })
 }
 
-sortList('all');
+sortList('all')
