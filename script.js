@@ -1,23 +1,20 @@
-const search = document.getElementById('input')
-const totalProducts = document.querySelectorAll('.products')
+document.getElementById('input').addEventListener('input', (event) => {
+    const searchInputValue = event.target.value
 
-const filterBySearch = () => {
-    const Value = search.value;
+    document.querySelectorAll('.products').forEach(product => {
+        const productName = product.querySelector('.product-name').innerHTML
+        const productPrice = product.querySelector('.price-of-product').innerHTML
 
-    totalProducts.forEach(e => {
-        const productName = e.querySelector('.product-name').innerHTML
-        const productPrice = e.querySelector('.price-of-product').innerHTML
-
-        if (productName.includes(Value) || productPrice.includes(Value)) {
-            e.style.display = 'block' 
+        if (
+            productName.includes(searchInputValue)
+            || productPrice.includes(searchInputValue)
+        ) {
+            product.style.display = 'block'
+        } else {
+            product.style.display = 'none'
         }
-        else 
-        {
-            e.style.display = 'none' 
-        }
-    });
-};
-search.addEventListener('input', filterBySearch)
+    })
+})
 
 const sortList = (category, event) => {
     const list = {
@@ -25,7 +22,7 @@ const sortList = (category, event) => {
         'sneakers': 'Sneakers',
         'wallet': 'Wallet',
         'cap': 'Cap'
-    };
+    }
 
     document.querySelectorAll('.nav-items').forEach((el) => {
         if (el.innerHTML === list[category]) {
@@ -35,21 +32,17 @@ const sortList = (category, event) => {
         }
 
         el.classList.remove('active-navigation-bar')
-    });
+    })
 
-    totalProducts.forEach((el) => {
-        if (category === 'all' || el.getAttribute('data-category') === category) 
-        {
-            el.style.display ='block'
-        } 
-        else 
-        {
-            el.style.display = 'none'
-        }         
+    document.querySelectorAll('.products').forEach((product) => {
+        if (category === 'all' || product.getAttribute('data-category') === category) {
+            product.style.display = 'block'
+        } else {
+            product.style.display = 'none'
+        }
     });
 
     localStorage.setItem('selectedCategory', category)
-    
 };
 
 const savedCategory = localStorage.getItem('selectedCategory') || 'all'
