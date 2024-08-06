@@ -31,17 +31,17 @@
                 </div>
 
                 <div class="right-side-of-left-sub-container-header">
-                    <input type="text" name="" id="" class="search">
+                    <input type="text" name="" id="input" class="search">
                 </div>
 
             </header>
 
             <nav class="navigation-bar">
                 <ul>
-                    <li class="nav-items" onclick="sortList('all')">All Items</li>
-                    <li class="nav-items" onclick="sortList('sneakers')">Sneakers</li>
-                    <li class="nav-items" onclick="sortList('wallet')">Wallet</li>
-                    <li class="nav-items" onclick="sortList('cap')">Cap</li>
+                    <li data-category="all" class="nav-items" onclick="sortList('all')">All Items</li>
+                    <li data-category="sneakers" class="nav-items" onclick="sortList('sneakers')">Sneakers</li>
+                    <li data-category="wallet" class="nav-items" onclick="sortList('wallet')">Wallet</li>
+                    <li data-category="cap" class="nav-items" onclick="sortList('cap')">Cap</li>
                 </ul>
             </nav>
 
@@ -50,7 +50,7 @@
                 <div class="products" data-category="sneakers">
 
                     <div class="top-part-of-product">
-                        <h3>Neemans</h3>
+                        <h3 class="product-name">Neemans</h3>
                         <span class="description">cotton classic sneakers <br> for Men</span>
                     </div>
 
@@ -64,7 +64,7 @@
 
                 <div class="products" data-category="sneakers">
                     <div class="top-part-of-product">
-                        <h3>HRX</h3>
+                        <h3 class="product-name">HRX</h3>
                         <span class="description">HRX-118 Sneakers <br> For Men</span>
                     </div>
                     <div class="bottom-part-of-product">
@@ -76,7 +76,7 @@
 
                 <div class="products" data-category="sneakers">
                     <div class="top-part-of-product">
-                        <h3>asian</h3>
+                        <h3 class="product-name">asian</h3>
                         <span class="description">Boston-01 Chunky <br> Sneakers</span>
                     </div>
                     <div class="bottom-part-of-product">
@@ -88,7 +88,7 @@
 
                 <div class="products" data-category="sneakers">
                     <div class="top-part-of-product">
-                        <h3>asian</h3>
+                        <h3 class="product-name">asian</h3>
                         <span class="description">Sneaker Casual Shoes <br> For Men</span>
                     </div>
                     <div class="bottom-part-of-product">
@@ -100,7 +100,7 @@
 
                 <div class="products" data-category="wallet">
                     <div class="top-part-of-product">
-                        <h3>Puma</h3>
+                        <h3 class="product-name">Puma</h3>
                         <span class="description">Leather Stripe <br> Wallet</span>
                     </div>
                     <div class="bottom-part-of-product">
@@ -112,7 +112,7 @@
 
                 <div class="products" data-category="wallet">
                     <div class="top-part-of-product">
-                        <h3>VOGARD</h3>
+                        <h3 class="product-name">VOGARD</h3>
                         <span class="description">Unisex Brown <br> Wallet</span>
                     </div>
                     <div class="bottom-part-of-product">
@@ -124,7 +124,7 @@
 
                 <div class="products" data-category="wallet">
                     <div class="top-part-of-product">
-                        <h3>Sassora</h3>
+                        <h3 class="product-name">Sassora</h3>
                         <span class="description">Leather Envelope <br> Wallet</span>
                     </div>
                     <div class="bottom-part-of-product">
@@ -136,7 +136,7 @@
 
                 <div class="products" data-category="wallet">
                     <div class="top-part-of-product">
-                        <h3>Allen Solly</h3>
+                        <h3 class="product-name">Allen Solly</h3>
                         <span class="description">Men Solid Two <br> Fold Wallet</span>
                     </div>
                     <div class="bottom-part-of-product">
@@ -148,7 +148,7 @@
 
                 <div class="products" data-category="cap">
                     <div class="top-part-of-product">
-                        <h3>Nike</h3>
+                        <h3 class="product-name">Nike</h3>
                         <span class="description">Tech Swoosh <br> Cap</span>
                     </div>
                     <div class="bottom-part-of-product">
@@ -160,7 +160,7 @@
 
                 <div class="products" data-category="cap">
                     <div class="top-part-of-product">
-                        <h3>New Era</h3>
+                        <h3 class="product-name">New Era</h3>
                         <span class="description">Men's Plain Base <br> Ball Cap</span>
                     </div>
                     <div class="bottom-part-of-product">
@@ -172,7 +172,7 @@
 
                 <div class="products" data-category="cap">
                     <div class="top-part-of-product">
-                        <h3>Jack & Jones</h3>
+                        <h3 class="product-name">Jack & Jones</h3>
                         <span class="description">Cooling Performance <br> Cap</span>
                     </div>
                     <div class="bottom-part-of-product">
@@ -202,56 +202,6 @@
             </header>
 
             <div class="orders-container">
-
-                <div class="orders">
-                    <img src="https://imgs.search.brave.com/g42Y7Y8j9lt0PyLU_LPjk9Sr2KW-DA3P5kyIsUH36Fo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjIz/MjcwODM2L3Bob3Rv/L21vZGVybi1zcG9y/dC1zaG9lcy5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9RDd4/T2l5VjNUTVFnVXVJ/cWxWdnV0UG80OWd5/TUc5ZjVVODJtY3Z1/RGMwWT0"
-                        alt="sneaker_2" class="ordered-product-img">
-                    <h5 class="ordered-product-name">HRX-118</h5>
-                    <span class="equals">-</span>
-                    <span>1</span>
-                    <span class="plus">+</span>
-                    <span class="product-price">&#8377;1,493</span>
-                </div>
-
-                <div class="orders">
-                    <img src="https://imgs.search.brave.com/_l4b4UWGOyKw6LT6A651kN3fWUgs4D8kXRp38ianmw4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjkx/NjE2MTM2L3Bob3Rv/L3JlZC1zbmVha2Vy/cy5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9QkJNTk94Um5O/TmRhZUVabU1vb0Ex/WHU5RXhxLW9sd3JQ/OW4zQi1pYUpDVT0"
-                        alt="sneaker_3" class="ordered-product-img">
-                    <h5 class="ordered-product-name">Boston-01</h5>
-                    <span class="equals">-</span>
-                    <span>1</span>
-                    <span class="plus">+</span>
-                    <span class="product-price">&#8377;822</span>
-                </div>
-
-                <div class="orders">
-                    <img src="https://imgs.search.brave.com/5gOxNeymY4D-gi7ITYHHp8yofWFT8Tmq56oahJtuxm4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG9wb3ZsZWF0aGVy/LmNvbS9jZG4vc2hv/cC9maWxlcy9sZWF0/aGVyLTUtY2FyZC13/YWxsZXQtYmxhY2st/cG9wb3YtbGVhdGhl/ci00MTMxMDI0ODcz/MDg0Ny5qcGc_dj0x/NzA2MDczMjkxJndp/ZHRoPTE2MDA"
-                        alt="wallet_3" class="ordered-product-img">
-                    <h5 class="ordered-product-name">Leather Wallet</h5>
-                    <span class="equals">-</span>
-                    <span>1</span>
-                    <span class="plus">+</span>
-                    <span class="product-price">&#8377;822</span>
-                </div>
-
-                <div class="orders">
-                    <img src="https://imgs.search.brave.com/UxZuL5P3Muv21LV1Hm7iXgRuuL8B_F8t3ixfdrwTlW8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG9wb3ZsZWF0aGVy/LmNvbS9jZG4vc2hv/cC9maWxlcy9sZWF0/aGVyLXRyYWRpdGlv/bmFsLXdhbGxldC1o/ZXJpdGFnZS1icm93/bi1wb3Bvdi1sZWF0/aGVyLTQxNDA5MjE0/NTc4OTExLmpwZz92/PTE3MDcxOTU1NDQm/d2lkdGg9MTYwMA"
-                        alt="wallet_4" class="ordered-product-img">
-                    <h5 class="ordered-product-name">Two Fold Wallet</h5>
-                    <span class="equals">-</span>
-                    <span>1</span>
-                    <span class="plus">+</span>
-                    <span class="product-price">&#8377;699</span>
-                </div>
-
-                <div class="orders">
-                    <img src="https://imgs.search.brave.com/qz5ty4o8BGvXb1PZvvnReAX32tkGoqPtc1CwocJE4GI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTI2/MTMxNTAwL3Bob3Rv/L2hhdC1vbi13aGl0/ZS1iYWNrZ3JvdW5k/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz13RWFacXhxc0NB/c3loVC1xc1doOVFS/eGMxRXUwLWtta2tm/TUpUZG1TMnFZPQ"
-                        alt="cap_2" class="ordered-product-img">
-                    <h5 class="ordered-product-name">Base Ball Cap</h5>
-                    <span class="equals">-</span>
-                    <span>1</span>
-                    <span class="plus">+</span>
-                    <span class="product-price">&#8377;1,200</span>
-                </div>
 
                 <div class="orders">
                     <img src="https://imgs.search.brave.com/R0bcVq146jQwe6NoBQkiMVV1P9B1Pjq4UZj-Yxlk1kM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTg1/MjQ4NzQzL3Bob3Rv/L2Jhc2ViYWxsLWNh/cC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9Rkg4eWFhNkJR/OHA5ZzRSeGVyd1dI/d1N3MnVhdWFEUGxT/MlRxS3RtMkNZdz0"
