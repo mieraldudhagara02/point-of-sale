@@ -117,6 +117,15 @@ body
     background-color: transparent;
 }
 
+#no-data
+{
+    width: max-content;
+    display: none;
+    font-size: 50px;
+    color: rgb(212, 212, 212);
+    margin-top: 50px;
+}
+
 .products
 {
     padding: 5px;
@@ -218,12 +227,6 @@ body
     justify-content: space-around;
 }
 
-.ordered-product-name
-{
-    width: 8vw;
-    text-align: justify;
-}
-
 .ordered-product-img
 {
     height: 60px;
@@ -231,21 +234,27 @@ body
     border-radius: 5px;
 }
 
-.equals
+.ordered-product-name
+{
+    width: 8vw;
+    text-align: justify;
+}
+
+.decrement
 {
     background-color: rgb(215, 215, 215);
     border-radius: 5px;
     padding: 3px 8px;
 }
 
-.plus
+.increment 
 {
     background-color: rgb(215, 215, 215);
     border-radius: 5px;
     padding: 3px 8px;
 }
 
-.product-price
+.ordered-product-price
 {
     width: 5vw;
     text-align: end;
