@@ -38,7 +38,7 @@ const sortList = (category) => {
 
         el.classList.remove('active-navigation-bar')
     })
-
+  
     const searchInputValue = document.getElementById('input').value;
     sort_search(category, searchInputValue);
 
