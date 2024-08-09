@@ -1,22 +1,27 @@
-document.getElementById('input').addEventListener('input', (event) => {
-    const searchInputValue = event.target.value
-
+function sort_search(category, searchInputValue)
+{    
+    let found = false
     document.querySelectorAll('.products').forEach(product => {
-        const productName = product.querySelector('.product-name').innerHTML
-        const productPrice = product.querySelector('.price-of-product').innerHTML
+        
+        const matchesCategory = category === 'all' || product.getAttribute('data-category') === category;
+        const matchesSearch = product.querySelector('.product-name').innerHTML.includes(searchInputValue) ||
+                              product.querySelector('.price-of-product').innerHTML.includes(searchInputValue);
 
-        if (
-            productName.includes(searchInputValue)
-            || productPrice.includes(searchInputValue)
-        ) {
+        if(matchesCategory && matchesSearch)
+        {
             product.style.display = 'block'
-        } else {
+            found = true;
+        }
+        else
+        {
             product.style.display = 'none'
         }
-    })
-})
 
-const sortList = (category, event) => {
+        document.getElementById('no-data').style.display = found ? 'none' : 'block'
+    })
+}
+
+const sortList = (category) => {
     const list = {
         'all': 'All Items',
         'sneakers': 'Sneakers',
@@ -33,17 +38,24 @@ const sortList = (category, event) => {
 
         el.classList.remove('active-navigation-bar')
     })
-
-    document.querySelectorAll('.products').forEach((product) => {
-        if (category === 'all' || product.getAttribute('data-category') === category) {
-            product.style.display = 'block'
-        } else {
-            product.style.display = 'none'
-        }
-    });
+  
+    const searchInputValue = document.getElementById('input').value;
+    sort_search(category, searchInputValue);
 
     localStorage.setItem('selectedCategory', category)
 };
 
-const savedCategory = localStorage.getItem('selectedCategory') || 'all'
-sortList(savedCategory)
+const retrieveSavedSearchInputValue = localStorage.getItem('searchProduct') || ''
+const retrieveSavedCategory = localStorage.getItem('selectedCategory') || 'all'
+
+document.getElementById('input').value = retrieveSavedSearchInputValue;
+
+document.getElementById('input').addEventListener('input', (event) => {
+    const searchInputValue = event.target.value;
+    const selectedCategory = localStorage.getItem('selectedCategory') || 'all';
+    sort_search(selectedCategory, searchInputValue);
+    localStorage.setItem('searchProduct', searchInputValue);
+});
+
+sort_search(retrieveSavedCategory, retrieveSavedSearchInputValue)
+sortList(retrieveSavedCategory)
